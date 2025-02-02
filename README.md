@@ -1,26 +1,15 @@
-# impact 
-This is a series of recommendations for ICs and teams.
+# impact
 
-- [Individual Contributor](ic/toc.md)
-- [Team](team/toc.md)
-- [Contribute](#contribute)
+## DNS configuration
 
-## Contribute
+[Map](https://cloud.google.com/run/docs/mapping-custom-domains#gcloud) a custom domain to cloud run.
+Or, a [load balancer](https://cloud.google.com/blog/topics/developers-practitioners/serverless-load-balancing-terraform-hard-way).
 
-### install adr-tools
-This repo uses [ADRs](https://github.com/npryce/adr-tools) to record decisions and recommendations.
+## Deploy
 
 ```bash
-brew install adr-tools
-```
+gcloud auth login
+gcloud auth configure-docker
 
-### create a new recommendation
-Change directory to `ic` or `team`
-```bash
-adr new new-recommendation
-```
-
-###  generate toc
-```bash
-make toc
+./deploy barncat
 ```
