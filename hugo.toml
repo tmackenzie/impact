@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'paradoxes, anecdotes, and sometimes useful'
 theme = 'maverick'
 
+[services]
+  [services.googleAnalytics]
+    id = 'G-F3KE8ZK4FF'
+
 [permalinks]
   pages = "/:slug"
 
