@@ -53,5 +53,5 @@ These environments require micromanaging your leader and their leader.
 
 ### Realistic outcomes
 
-Even with these approaches you may never feel valued. Possibly worse, there may be people in your role or a higher role 
-that don't have the same impact as you and somehow get better yearly reviews.
+Even with these approaches you may never feel valued. There may be people with less impact as you yet somehow get 
+better yearly reviews. I suggest to blame the process not the people that get better results.
