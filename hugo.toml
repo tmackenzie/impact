@@ -25,6 +25,11 @@ theme = 'maverick'
     name = "Posts"
     pageRef = "/posts/"
     weight = -200
+  [[menu.main]]
+    identifier = "adrs"
+    name = "ADRs"
+    pageRef = "/adrs/"
+    weight = -100
 
 [markup]
   [markup.goldmark.renderer]
