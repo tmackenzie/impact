@@ -17,7 +17,9 @@ theme = 'maverick'
   items = 10
 
 [params.comments]
-  enabled = false
+  enabled = true
+  githubRepo = 'tmackenzie/impact'
+  theme = 'github-light'
 
 [menu]
   [[menu.main]]
