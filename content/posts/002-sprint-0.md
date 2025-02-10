@@ -9,7 +9,7 @@ tags:
 
 The most important sprint by far is `Sprint 0`. Missing this sprint and rushing into features has harmful impacts which
 are extremely costly to repair. The repairs are not only technical. Healing requires what seems to be countless, tiring 
-discussions. It's unrealistic to expect software to completely heal if `Sprint 0` is not done upfront.
+discussions.
 
 The goals of the `Sprint 0` must include:
 
@@ -46,7 +46,7 @@ This must be done now because:
 - It will establish a culture where everyone is required to write tests for every feature.
 - Doing it later will be more costly and spoiler.. teams will end up doing it later.
 - Software that is designed to be tested has a longer life.
-- Developers are motivated by working on code bases that are predicable.
+- Developers are motivated by working on code that's are predicable.
 
 ### Integration testing
 Make decisions and execute on how the team plans to do automated integration testing..
@@ -65,19 +65,18 @@ Most teams only focus on CI and miss CD.
 
 Key areas to focus on are:
 - Do no rebuild while advancing through envs. 
-  - Deploy what was previously built.
-- Deploy a branch to test manually or automated before merging.
+- A developer must be able to deploy a branch in a isolated branch environment.
 - Deploy a branch or tag to any environment, including prod.
-  - This can satisfy rollbacks.
 - Make CD extremely easy so anyone on the team can do it.
   - Automate environment provisioning, IoC.
   - Automate CI/CD for events such as, on pull request, on merge.
   - It's ok to require minimal click ops for prod releases.
 
 Doing this now will eliminate technical debt going forward regarding:
-- Manual or key person interaction for updating environments.
+- Manual or key people interaction for updating environments.
 - Phrases like, I cannot test this because of the environment.
 - Conflict of too many devs needing a env to deploy and test.
+- Eliminate `release schedules` because of how easy it is to deploy to prod.
 
 Teams will also be able to have a [DoD](#definition-of-done) where the feature must be in prod.
 
@@ -85,7 +84,7 @@ Teams will also be able to have a [DoD](#definition-of-done) where the feature m
 A team's definition done must be established in this sprint. It should be easily available and team members should be 
 measured against following it. 
 
-There's an example template I use to get this started over at the [ADRs]({{< ref "/adrs/001-definition-of-done/" >}}). I suggest using something like it to get the conversation started.
+There's an example template I use to get this started over at the [ADRs]({{< ref "/adrs/001-definition-of-done/" >}}).
 
 ### Scaffolding
 
@@ -95,3 +94,4 @@ by templating new repo creation via scaffolding. I've done this with [cookie cut
 - Include CI/CD scripts created for your team that can be modified for other projects.
 - Create projects with language, framework, and testing choices.
 - Automate external dependencies like test reporting services (sonar), artifact repositories, or others.
+- Document anything that this `click ops` in a `/docs` section of the repository.
