@@ -1,4 +1,4 @@
-# 2. Avoid Traefik as API Gateway
+# 2. Traefik as API Gateway Review
 
 Date: 2026-01-04
 
